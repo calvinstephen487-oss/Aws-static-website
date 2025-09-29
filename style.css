@@ -1,0 +1,18 @@
+body {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  background-color: #fff9f3;
+  color: #222;
+  padding: 50px;
+}
+h1 {
+  color: #FF9900;
+}
+button {
+  padding: 10px 20px;
+  background: #FF9900;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
