@@ -1,0 +1,38 @@
+# How to Deploy This AWS Static Website
+
+## 1. Prepare Your Website Files
+- Make sure you have all your website files ready (`index.html`, `error.html`, `style.css`, images, etc.).
+- Ensure your `index.html` file works correctly when opened locally.
+
+## 2. Create an S3 Bucket
+- Sign in to the [AWS Management Console](https://console.aws.amazon.com/s3/).
+- Click on **Create Bucket**.
+- Provide a unique bucket name (e.g., `my-unique-bucket-name`).
+- Select a region close to you or your users.
+- Leave other settings as default and click **Create bucket**.
+
+## 3. Upload Your Website Files
+- Open the bucket you just created.
+- Click **Upload**, add your website files and folders.
+- Click **Upload** to complete.
+
+## 4. Configure Static Website Hosting
+- In the bucket, go to the **Properties** tab.
+- Scroll to **Static website hosting** and click **Edit**.
+- Choose **Enable**, then select **Host a static website**.
+- Set the **Index document** to `index.html`.
+- Optionally specify the **Error document** as `error.html`.
+- Save changes.
+
+## 5. Make Your Bucket Content Public
+- You need to allow public read access to your objects.
+- Go to the **Permissions** tab in your bucket.
+- Edit the **Bucket policy** to add a policy that grants public read access.
+- (Policy example can be found in AWS docs.)
+
+## 6. Access Your Static Website
+- After setting up, find the **Endpoint** URL in the **Static website hosting** section.
+- Open it in your browser to view your live site.
+- Test your error page by navigating to a non-existent path.
+
+---
